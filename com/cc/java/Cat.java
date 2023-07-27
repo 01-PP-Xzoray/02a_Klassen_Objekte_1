@@ -12,5 +12,7 @@ public class Cat {
     public String furColor;
     int age;
 
-
+    public String tellYourName() {
+        return this.firstName;
+    }
 }

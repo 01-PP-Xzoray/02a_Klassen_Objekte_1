@@ -8,10 +8,12 @@ public class App {
         // Cat -- Referenztyp // Klasse
         // Cat -- Referenzvariable 
 
-        Cat cat1 = new Cat();
+        // Instanziierung mit custom constructor
+        Cat cat1 = new Cat("Dickabella", "pink", 17);
         
         /* Wertzuweisung */ 
-        cat1.firstName = "Dickabella";
+        cat1.changeName("Grizabella");
+        // cat1.firstName = "Dickabella";
         cat1.furColor = "pink";
         cat1.age = 17;
 
@@ -23,7 +25,7 @@ public class App {
 
         output("-----------------------");
         
-        Cat cat2 = new Cat();
+        Cat cat2 = new Cat("Analonzo", "brown", 69);
         cat2.firstName = "Analonzo";
         cat2.furColor = "brown";
         cat2.age = 69;

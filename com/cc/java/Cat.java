@@ -1,14 +1,16 @@
 package com.cc.java;
 
 public class Cat {
-    
-// this --> Instanzvariable & Objektgebunden
 
-// public void tellYourAddress() {
-//     System.out.println("Blick von innen: " + this);
-// }
+    /*   
+    *  Felder (fields)
+    *  Attribute (attributes)
+    *  Eigenschaften (properties)
+    *
+    */
+    public String firstName;
+    public String furColor;
+    int age;
 
-public String tellYourAddress() {
-    return "Blick von innen: " + this;
-}
+
 }

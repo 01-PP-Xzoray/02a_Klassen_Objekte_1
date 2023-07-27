@@ -5,18 +5,25 @@ public class App {
     public static void main(String[] args) {
 
         /* Instanziierung Klasse --> Objekte */
-        // Cat -- Referenztyp
-        // Cat -- Referenzvariable
+        // Cat -- Referenztyp // Klasse
+        // Cat -- Referenzvariable 
 
         Cat cat1 = new Cat();
-        output("Blick von aussen: " + cat1);
-        output(cat1.tellYourAddress());
+        
+        cat1.firstName = "Dickabella";
+        cat1.furColor = "pink";
+        cat1.age = 69;
 
-        output("----------------");
+        output(cat1.firstName);
+        output(cat1.furColor);
+
+        // .. was nicht passt, wird passend gemacht .. ;-)
+        output(Integer.toString(cat1.age));
+        output(String.valueOf(cat1.age));
+
+        output("-----------------------");
         
         Cat cat2 = new Cat();
-        output("Blick von aussen: " + cat2);
-        output(cat2.tellYourAddress());
     }
 
     public static void output(String outputData) {

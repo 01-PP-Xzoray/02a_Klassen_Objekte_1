@@ -17,6 +17,9 @@ public class App {
         // .. was nicht passt, wird passend gemacht! // 1.Möglichkeit
         output(String.valueOf(cat1.getAge()));
 
+        cat1.setFurColor("grey");
+        output(cat1.getFurColor());
+
         output("-----------------------");
         
         Cat cat2 = new Cat("Analonzo", "brown", 69);

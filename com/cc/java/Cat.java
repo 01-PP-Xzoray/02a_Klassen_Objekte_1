@@ -15,10 +15,18 @@ public class Cat {
     private String furColor;
     private int age;
 
-    
+    public Cat(String firstName, String furColor, int age) {
+    this.firstName = firstName;
+    this.furColor = furColor;
+    this.age = age;
+    }
     
     public String getFirstName() {
-        return firstName;
+        if (getPermission()) {
+            return firstName;
+        } else {
+            return "Sorry, no permission!";
+        }
     }
 
     public String getFurColor() {
@@ -29,9 +37,11 @@ public class Cat {
         return age;
     }
 
-    public Cat(String firstName, String furColor, int age) {
-        this.firstName = firstName;
+    public void setFurColor(String furColor) {
         this.furColor = furColor;
-        this.age = age;
+    }
+
+    private boolean getPermission() {
+        return false;
     }
 }

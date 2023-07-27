@@ -10,30 +10,21 @@ public class App {
 
         // Instanziierung mit custom constructor
         Cat cat1 = new Cat("Dickabella", "pink", 17);
-        
-        /* Wertzuweisung */ 
-        cat1.changeName("Grizabella");
-        // cat1.firstName = "Dickabella";
-        cat1.furColor = "pink";
-        cat1.age = 17;
 
         /* Ausgabe */
-        output(cat1.tellYourName());
-        output(cat1.furColor);
+        output(cat1.getFirstName());
+        output(cat1.getFurColor());
         // .. was nicht passt, wird passend gemacht! // 1.Möglichkeit
-        output(String.valueOf(cat1.age));
+        output(String.valueOf(cat1.getAge()));
 
         output("-----------------------");
         
         Cat cat2 = new Cat("Analonzo", "brown", 69);
-        cat2.firstName = "Analonzo";
-        cat2.furColor = "brown";
-        cat2.age = 69;
 
-        output(cat2.firstName);
-        output(cat2.furColor);
+        output(cat2.getFirstName());
+        output(cat2.getFurColor());
         // Typenkonventierung int --> String // 2.Möglichkeit
-        output(Integer.toString(cat2.age));
+        output(Integer.toString(cat2.getAge()));
     }   
 
     public static void output(String outputData) {

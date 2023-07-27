@@ -8,22 +8,30 @@ public class Cat {
     *  Eigenschaften (properties)
     *
     */
-    public String firstName;
-    public String furColor;
-    int age;
+
+    // public - jeder darf sehen
+    // private- nur die eigene Klasse darf sehen
+    private String firstName;
+    private String furColor;
+    private int age;
 
     
+    
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getFurColor() {
+        return furColor;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
     public Cat(String firstName, String furColor, int age) {
         this.firstName = firstName;
         this.furColor = furColor;
         this.age = age;
-    }
-
-    public String tellYourName() {
-        return this.firstName;
-    }
-
-    public void changeName(String firstName) {
-        this.firstName = firstName;
     }
 }
